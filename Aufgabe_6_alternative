@@ -1,0 +1,23 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Fri Dec  8 11:58:08 2023
+
+@author: JCRM1983
+"""
+
+import numpy as np
+row= np.array([i for i in range(11)])
+
+x = '    |'+' '.join(''.join(['{:4}'.format(item) for item in row]))
+print(x)
+print('-'*len(x))
+
+for i in range(8):
+    b=row*(i+1)
+    x =  str(i+1) +'   |'+' '.join(''.join(['{:4}'.format(item) for item in b]))
+    print(x)
+    
+for i in range(9,10):
+    b=row*(i+1)
+    x =  str(i+1) +'  |'+' '.join(''.join(['{:4}'.format(item) for item in b]))
+    print(x) 
